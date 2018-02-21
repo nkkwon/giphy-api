@@ -4,7 +4,7 @@ var superheroes = ["Ironman", "Spiderman", "Superman", "Batman"]
 function superheroGIPHY() {
     var heroes = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + heroes + "&api_key=dc6zaTOxFJmzC&limit=10";
-
+    $("#gifsHere").empty();
     console.log(queryURL);
     $.ajax({
         url: queryURL,
